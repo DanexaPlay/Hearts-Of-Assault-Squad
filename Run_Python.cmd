@@ -1,5 +1,6 @@
 @echo off
 setlocal
+set "PYTHONUTF8=1"
 cd /d "%~dp0"
 if defined BRIDGE_PYTHON (
   set "_BRIDGE_SELECTED=%BRIDGE_PYTHON%"

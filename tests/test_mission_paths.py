@@ -85,7 +85,7 @@ class MissionPathTests(unittest.TestCase):
             self.assertTrue(installed_mission(target,second).parent.joinpath('interface.set').exists())
             self.assertEqual((legacy/'map.ply').read_text(),'legacy map')
             self.assertFalse((legacy/'interface.set').exists())
-            self.assertTrue((root/'second/install-backup'/old.relative_to(target)/'interface.set').exists())
+            self.assertTrue((root/'second/install-backup'/old.relative_to(target.resolve())/'interface.set').exists())
             (two/'map.ply').write_text('changed under same UUID')
             with self.assertRaises(BridgeError):install_generated_mod(root/'two',target,root/'collision')
             self.assertEqual((installed_mission(target,second).parent/'map.ply').read_text(),'winter')

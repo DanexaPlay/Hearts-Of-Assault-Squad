@@ -18,7 +18,7 @@ class CleanupTests(unittest.TestCase):
             plan=cleanup_plan(cfg,sessions)
             self.assertEqual(len(plan['files']),1)
             victim=saves/('HMB_transition_'+'0'*32+'.hoi4')
-            self.assertEqual(Path(plan['files'][0]['path']),victim)
+            self.assertEqual(Path(plan['files'][0]['path']),victim.resolve())
             self.assertTrue(victim.exists())  # Planning is read-only.
             result=cleanup(cfg,sessions)
             self.assertEqual(result['bytes_removed'],len(b'original'))
