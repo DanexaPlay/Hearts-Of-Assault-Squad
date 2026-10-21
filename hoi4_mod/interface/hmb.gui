@@ -1,0 +1,14 @@
+guiTypes = {
+    containerWindowType = {
+        name = "hmb_combat_button_window"
+        position = { x = 80 y = 620 }
+        size = { width = 428 height = 40 }
+        buttonType = {
+            name = "hmb_request_button"
+            position = { x = 0 y = 0 }
+            quadTextureSprite = "GFX_sort_button_428x29_button"
+            buttonText = "hmb_request_button"
+            buttonFont = "hoi_16mbs"
+        }
+    }
+}

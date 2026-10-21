@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "ea480e1eeb2443e8bba0cec3e8561e53",
+  "source": "MANUAL TEST FIXTURE — not a real exported battle",
+  "province": 6380,
+  "state": 209,
+  "terrain": "plains",
+  "river_crossing": false,
+  "war_confirmed": true,
+  "paused_confirmed": true,
+  "all_divisions_in_locations_confirmed": false,
+  "attacker": {"country": "GER", "ideology": "fascism", "divisions": [
+    {"id": "manual-ger-1", "name": "Example infantry", "province": 9578, "manpower": 2000, "strength": 1, "organization": 1}
+  ]},
+  "defender": {"country": "SOV", "ideology": "communism", "divisions": [
+    {"id": "manual-sov-1", "name": "Example infantry", "province": 6380, "manpower": 2000, "strength": 1, "organization": 1}
+  ]}
+}

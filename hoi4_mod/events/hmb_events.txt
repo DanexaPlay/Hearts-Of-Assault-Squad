@@ -1,0 +1,8 @@
+add_namespace = hmb
+country_event = {
+    id = hmb.1
+    title = hmb_event_title
+    desc = hmb_event_desc
+    is_triggered_only = yes
+    option = { name = hmb_event_ok }
+}

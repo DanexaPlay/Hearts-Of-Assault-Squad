@@ -1,0 +1,26 @@
+__pycache__/
+sessions/
+*.sqlite
+*.tmp
+runtime/
+backups/
+mod-connection.json
+native_trial/*.dll
+native_trial/*.exe
+native_trial/evidence/
+
+# Machine-specific state and sensitive files
+config.json
+verification.json
+.venv/
+.env
+.env.*
+*.log
+*.hoi4
+*.scn
+*.pak
+*.zip
+*.7z
+*.dmp
+*.pem
+*.key

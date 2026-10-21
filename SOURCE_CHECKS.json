@@ -1,0 +1,12 @@
+{
+  "files": 146,
+  "bytes": 1139845,
+  "private_state_excluded": true,
+  "credential_patterns_checked": true,
+  "source_tests": {
+    "run": 200,
+    "skipped_without_installed_game": 1,
+    "failures": 0
+  },
+  "fresh_map_bootstrap": "one stock map generated from public synthetic fixture, no installation"
+}

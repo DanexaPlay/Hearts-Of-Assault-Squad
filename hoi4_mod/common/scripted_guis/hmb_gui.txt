@@ -1,0 +1,16 @@
+scripted_gui = {
+    hmb_combat_button = {
+        context_type = player_context
+        window_name = "hmb_combat_button_window"
+        parent_window_name = "landcombatview"
+        visible = { is_ai = no has_war = yes }
+        effects = {
+            hmb_request_button_click = {
+                set_country_flag = hmb_tactical_requested
+                add_to_variable = { hmb_request_seq = 1 }
+                hmb_capture_combat_selection = yes
+                log = "HMB_REQUEST: country=[ROOT.GetTag] seq=[?hmb_request_seq|0] selection=native_v1"
+            }
+        }
+    }
+}

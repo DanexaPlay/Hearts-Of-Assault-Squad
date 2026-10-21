@@ -1,0 +1,19 @@
+hmb_category = {
+    hmb_request = {
+        icon = generic_prepare_civil_war
+        cost = 0
+        visible = { is_ai = no }
+        available = { has_war = yes }
+        complete_effect = {
+            set_country_flag = hmb_tactical_requested
+            log = "HMB_REQUEST: player opted in; pause and export the selected battle"
+            country_event = { id = hmb.1 }
+        }
+    }
+    hmb_cancel = {
+        icon = generic_political_reform
+        cost = 0
+        visible = { has_country_flag = hmb_tactical_requested }
+        complete_effect = { clr_country_flag = hmb_tactical_requested }
+    }
+}

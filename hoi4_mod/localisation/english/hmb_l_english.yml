@@ -1,0 +1,8 @@
+﻿l_english:
+ hmb_category: "Men of War tactical battles"
+ hmb_request: "Request a tactical battle"
+ hmb_cancel: "Cancel tactical request"
+ hmb_request_button: "Simulate in Men of War"
+ hmb_event_title: "Tactical battle request"
+ hmb_event_desc: "Use the button in the chosen combat window. Keep the bridge running while it prepares the tactical mission and returns its result. HOI4 remains paused."
+ hmb_event_ok: "Request battle"

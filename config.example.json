@@ -1,0 +1,104 @@
+{
+  "hoi4": "C:/Games/Steam/steamapps/common/Hearts of Iron IV",
+  "mow": "C:/Games/Steam/steamapps/common/Men of War Assault Squad 2",
+  "hoi4_user": "C:/Users/USER/Documents/Paradox Interactive/Hearts of Iron IV",
+  "mow_progress": "C:/Users/USER/Documents/My Games/men of war - assault squad 2/profiles/PROFILE/game_progress.set",
+  "native_countries": {
+    "GER": "ger",
+    "SOV": "rus",
+    "USA": "usa",
+    "ENG": "eng",
+    "JAP": "jap"
+  },
+  "ideology_fallback": {
+    "democratic": [
+      "usa",
+      "eng"
+    ],
+    "communism": [
+      "rus"
+    ],
+    "fascism": [
+      "ger",
+      "jap"
+    ],
+    "neutrality": [
+      "eng"
+    ]
+  },
+  "country_overrides": {},
+  "maps": {
+    "plains": [
+      "multi/1v1_road",
+      "multi/1v1_winter_fields"
+    ],
+    "forest": [
+      "multi/1v1_spring"
+    ],
+    "hills": [
+      "multi/1v1_winter_hills"
+    ],
+    "urban": [
+      "multi/1v1_winter_town",
+      "multi/1v1_argentan"
+    ],
+    "desert": [
+      "single/02_ger-skirmish/00b_ger-gazala"
+    ],
+    "river": [
+      "multi/1v1_frozen_river"
+    ]
+  },
+  "terrain_approximations": {
+    "mountain": "hills",
+    "marsh": "river",
+    "jungle": "forest"
+  },
+  "max_infantry_per_side": 60,
+  "soldiers_per_actor": 200,
+  "loss_policy": {
+    "max_manpower_loss_ratio": 0.25,
+    "defeat_org_damage_ratio": 0.9,
+    "defeat_min_loss_ratio": 0.02,
+    "winner_org_damage_ratio": 0.2
+  },
+  "max_vehicles_per_component": 3,
+  "equipment_per_vehicle": 30,
+  "max_entities_per_side": 240,
+  "infantry_spawn_spacing": 140,
+  "vehicle_spawn_spacing": 500,
+  "battle_timer_seconds": 900,
+  "capture_score_to_win": 100,
+  "capture_tick_seconds": 5,
+  "capture_radius": 300,
+  "preparation_seconds": 60,
+  "ai_order_interval_seconds": 15,
+  "mow_live_mod": "runtime/HOI4_MoW_Bridge",
+  "auto_install_mow": true,
+  "native_return_mode": "direct",
+  "mow_auto_load": true,
+  "show_transfer_progress": true,
+  "winter_maps": {
+    "plains": [
+      "multi/1v1_winter_fields"
+    ],
+    "hills": [
+      "multi/1v1_winter_hills"
+    ],
+    "urban": [
+      "multi/1v1_winter_town"
+    ],
+    "river": [
+      "multi/1v1_frozen_river"
+    ]
+  },
+  "winter_terrain_approximations": {
+    "forest": "hills",
+    "desert": "plains"
+  },
+  "preinstalled_map_slots": true,
+  "preparation_boundaries": true,
+  "supply_ammunition": true,
+  "minimum_ammunition_ratio": 0.2,
+  "retained_completed_snapshots": 3
+}

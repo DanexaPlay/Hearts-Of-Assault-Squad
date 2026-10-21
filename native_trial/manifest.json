@@ -1,0 +1,9 @@
+{
+  "release": "v0.5",
+  "source": "https://github.com/ari-20/hoi4_lua/tree/v0.5",
+  "archive_sha256": "b159cedf70f8647fd7d9d0b2d7a0fea64eccd5813742a74ea3d0a5edaab6c18b",
+  "binaries": {
+    "hoi4_launcher.exe": "e1f82566aac43aa1398fe314d4ca6fe23ed1847475863d5aaa11bd9582095d90",
+    "hoi4_bridge.dll": "1ffd42386b9f86dc7ec7ac74f3803413e336f2880e18192964aecce834adcd59"
+  }
+}

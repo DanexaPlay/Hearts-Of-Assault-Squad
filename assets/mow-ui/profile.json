@@ -1,0 +1,225 @@
+{
+  "mow_main": {
+    "reference": "mow_main.png",
+    "boxes": [
+      [
+        775,
+        220,
+        935,
+        245
+      ],
+      [
+        785,
+        270,
+        925,
+        292
+      ]
+    ],
+    "box": [
+      775,
+      220,
+      935,
+      245
+    ],
+    "tolerance": 6,
+    "bundled": true
+  },
+  "mow_single": {
+    "reference": "mow_single.png",
+    "boxes": [
+      [
+        770,
+        220,
+        940,
+        245
+      ],
+      [
+        775,
+        270,
+        935,
+        292
+      ]
+    ],
+    "box": [
+      770,
+      220,
+      940,
+      245
+    ],
+    "tolerance": 6,
+    "bundled": true
+  },
+  "mow_campaigns": {
+    "reference": "mow_campaigns.png",
+    "boxes": [
+      [
+        778,
+        501,
+        932,
+        524
+      ],
+      [
+        800,
+        221,
+        907,
+        244
+      ]
+    ],
+    "box": [
+      778,
+      501,
+      932,
+      524
+    ],
+    "tolerance": 6,
+    "bundled": true
+  },
+  "mow_campaign": {
+    "reference": "mow_campaign.png",
+    "boxes": [
+      [
+        732,
+        162,
+        975,
+        213
+      ],
+      [
+        720,
+        235,
+        746,
+        264
+      ],
+      [
+        966,
+        235,
+        984,
+        264
+      ]
+    ],
+    "box": [
+      732,
+      162,
+      975,
+      213
+    ],
+    "tolerance": 6,
+    "bundled": true
+  },
+  "mow_start": {
+    "reference": "mow_start.png",
+    "boxes": [
+      [
+        730,
+        977,
+        977,
+        996
+      ],
+      [
+        760,
+        1049,
+        952,
+        1065
+      ]
+    ],
+    "box": [
+      730,
+      977,
+      977,
+      996
+    ],
+    "tolerance": 6,
+    "bundled": true,
+    "alternate_references": [
+      "mow_start_native.png"
+    ]
+  },
+  "mow_start_overlay": {
+    "reference": "mow_start_overlay.png",
+    "alternate_references": [
+      "mow_start_overlay_sky.png"
+    ],
+    "boxes": [
+      [
+        183,
+        155,
+        242,
+        216
+      ],
+      [
+        1464,
+        155,
+        1523,
+        216
+      ],
+      [
+        760,
+        1049,
+        952,
+        1065
+      ]
+    ],
+    "box": [
+      183,
+      155,
+      242,
+      216
+    ],
+    "tolerance": 6,
+    "bundled": true
+  },
+  "mow_map_bank": {
+    "reference": "mow_map_bank.png",
+    "boxes": [
+      [
+        732,
+        162,
+        975,
+        213
+      ],
+      [
+        775,
+        240,
+        940,
+        510
+      ]
+    ],
+    "box": [
+      732,
+      162,
+      975,
+      213
+    ],
+    "tolerance": 6,
+    "bundled": true,
+    "missions": {
+      "single/hmb/map_062f6e0921d117f5": [
+        850,
+        251
+      ],
+      "single/hmb/map_07e5df679a3f6f1f": [
+        850,
+        292
+      ],
+      "single/hmb/map_12f59694d2e94813": [
+        850,
+        333
+      ],
+      "single/hmb/map_326af7b6ce19926e": [
+        850,
+        374
+      ],
+      "single/hmb/map_5bbd5c450b199fa6": [
+        850,
+        415
+      ],
+      "single/hmb/map_865450346eea9b12": [
+        850,
+        456
+      ],
+      "single/hmb/map_a5e544bdd3401dd3": [
+        850,
+        497
+      ]
+    }
+  }
+}
