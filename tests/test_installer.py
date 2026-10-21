@@ -13,7 +13,7 @@ import installer
 class InstallerTests(unittest.TestCase):
     def test_successful_integration_is_idempotent_and_preserves_backup(self):
         with tempfile.TemporaryDirectory() as temporary:
-            root=Path(temporary).resolve();user=root/'user';user.mkdir()
+            root=Path(temporary).resolve()/'Установка с пробелами';root.mkdir();user=root/'user';user.mkdir()
             raw=b'save_as_binary=yes\nother=1\n';(user/'settings.txt').write_bytes(raw)
             (root/'hoi4_mod').mkdir();(root/'hoi4_mod/descriptor.mod').write_text('name="HOI4 Men of War Bridge"\n')
             cfg={'hoi4_user':str(user),'mow':str(root/'game'),'mow_live_mod':str(root/'runtime/HOI4_MoW_Bridge')}
@@ -24,6 +24,8 @@ class InstallerTests(unittest.TestCase):
             self.assertEqual((user/'settings.txt').read_bytes(),raw.replace(b'=yes',b'=no'))
             self.assertEqual((root/'backup1/settings.txt').read_bytes(),raw)
             self.assertEqual((user/'mod/hoi4_mow_bridge.mod').read_bytes(),first)
+            self.assertIn('Установка с пробелами',first.decode('utf8'))
+            self.assertNotIn(b'\\u0423',first)
             self.assertFalse((root/'backup2').exists())
 
     def test_running_games_or_unsupported_build_stop_before_configuration(self):

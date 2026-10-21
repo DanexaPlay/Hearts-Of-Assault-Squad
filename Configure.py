@@ -80,7 +80,7 @@ def register_hoi(cfg):
     mods.mkdir(parents=True, exist_ok=True)
     target = mods / 'hoi4_mow_bridge.mod'
     text = (ROOT / 'hoi4_mod/descriptor.mod').read_text(encoding='utf8')
-    text += '\npath=' + json.dumps((ROOT / 'hoi4_mod').as_posix()) + '\n'
+    text += '\npath=' + json.dumps((ROOT / 'hoi4_mod').as_posix(), ensure_ascii=False) + '\n'
     if target.exists() and target.read_text(encoding='utf8') != text:
         raise ValueError('An existing bridge descriptor differs. Back it up before replacing: ' + str(target))
     target.write_text(text, encoding='utf8')

@@ -158,7 +158,7 @@ def existing_installation(cfg):
     old_descriptor = descriptor.read_text(encoding='utf-8-sig') if descriptor.exists() else ''
     if old_descriptor and 'HOI4 Men of War Bridge' not in old_descriptor:
         raise ValueError('Файл hoi4_mow_bridge.mod принадлежит другому моду; установка остановлена.')
-    descriptor_elsewhere = old_descriptor and ('path=' + json.dumps((ROOT / 'hoi4_mod').as_posix())) not in old_descriptor
+    descriptor_elsewhere = old_descriptor and ('path=' + json.dumps((ROOT / 'hoi4_mod').as_posix(), ensure_ascii=False)) not in old_descriptor
     return target, bool(other_link), bool(descriptor_elsewhere)
 
 
@@ -172,7 +172,7 @@ def integrate(cfg, backup, replace_existing=False):
         backed_write(settings, settings_text(settings.read_bytes()), backup / 'settings.txt', undo)
         descriptor = Path(cfg['hoi4_user']) / 'mod/hoi4_mow_bridge.mod'
         text = (ROOT / 'hoi4_mod/descriptor.mod').read_text(encoding='utf8')
-        text += '\npath=' + json.dumps((ROOT / 'hoi4_mod').as_posix()) + '\n'
+        text += '\npath=' + json.dumps((ROOT / 'hoi4_mod').as_posix(), ensure_ascii=False) + '\n'
         backed_write(descriptor, text.encode('utf8'), backup / 'hoi4_mow_bridge.mod', undo)
         if other_link:
             if not target.is_junction():
