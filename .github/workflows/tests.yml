@@ -17,4 +17,4 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r requirements.txt
       - run: python -m unittest discover -s tests
-      - run: python -m compileall -q bridge native_trial tests Configure.py
+      - run: python -m compileall -q bridge native_trial tests Configure.py installer.py build_release.py

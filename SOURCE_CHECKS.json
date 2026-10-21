@@ -1,12 +1,19 @@
 {
-  "files": 146,
+  "files": 154,
   "bytes": 1139845,
   "private_state_excluded": true,
   "credential_patterns_checked": true,
   "source_tests": {
-    "run": 200,
+    "run": 212,
     "skipped_without_installed_game": 1,
     "failures": 0
   },
-  "fresh_map_bootstrap": "one stock map generated from public synthetic fixture, no installation"
+  "fresh_map_bootstrap": "one stock map generated from public synthetic fixture, no installation",
+  "installer": {
+    "dry_run_with_real_game_paths": "passed; no changes",
+    "map_bootstrap": "seven slots generated and validated in isolated folder",
+    "native_download": "actual upstream archive and both binary hashes verified",
+    "rollback_and_junction_tests": "passed",
+    "live_game_integration_tested": false
+  }
 }

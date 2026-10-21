@@ -24,3 +24,5 @@ verification.json
 *.dmp
 *.pem
 *.key
+dist/
+build/
